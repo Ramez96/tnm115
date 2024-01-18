@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ramez">
+    <meta name="description" content="This website contains the form about System Usability Scale">
+    <meta name="keywords" content="LIU, Media technology, web programming, System Usability Scale, SUS">
+    <link rel="stylesheet" href="styles.css">
+    <title>System Usability Scale</title> 
+</head>
+
+<body>
+    <h1>Questionaire: System Usability Scale</h1>
+    <img src="media/sus-teaser.png" alt="some image about the scale of sus">
+
+    <article>
+        <h2>Instructions</h2>
+        <p>
+            For each of the following statements, mark <b>one</b> box
+            that best describes your reactions to the system you interacted with today.
+        </p>
+        <p>
+            To start over, click <a href="">here.</a>
+        </p>
+    </article>
+    <article>
+        <h2>
+            System Usability Scale
+        </h2>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">1.</p>
+            <p class="likert-flex-q">I think that I would like to use this system frequently.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <!-- name attribute is used to group the buttons, is unique for each group, 
+                        if one is selected then any previously pressed button is unselected-->
+                    <!--
+                        id attribute is unique to the button
+                        for attribute is to associate the label with the button
+                    -->
+                    <input type="radio" name="statement1-scale" id="statement1-scale-stronglydisagree" value="1">
+                    <label for="statement1-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement1-scale" id="statement1-scale-disagree" value="2">
+                    <label for="statement1-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement1-scale" id="statement1-scale-neutral" value="3">
+                    <label for="statement1-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement1-scale" id="statement1-scale-agree" value="4">
+                    <label for="statement1-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement1-scale" id="statement1-scale-stronglyagree" value="5">
+                    <label for="statement1-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">2.</p>
+            <p class="likert-flex-q">I found the system unnecessarily complex.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement2-scale" id="statement2-scale-stronglydisagree" value="1">
+                    <label for="statement2-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement2-scale" id="statement2-scale-disagree" value="2">
+                    <label for="statement2-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement2-scale" id="statement2-scale-neutral" value="3">
+                    <label for="statement2-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement2-scale" id="statement2-scale-agree" value="4">
+                    <label for="statement2-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement2-scale" id="statement2-scale-stronglyagree" value="5">
+                    <label for="statement2-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">3.</p>
+            <p class="likert-flex-q">I thought the system was easy to use.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement3-scale" id="statement3-scale-stronglydisagree" value="1">
+                    <label for="statement3-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement3-scale" id="statement3-scale-disagree" value="2">
+                    <label for="statement3-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement3-scale" id="statement3-scale-neutral" value="3">
+                    <label for="statement3-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement3-scale" id="statement3-scale-agree" value="4">
+                    <label for="statement3-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement3-scale" id="statement3-scale-stronglyagree" value="5">
+                    <label for="statement3-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">4.</p>
+            <p class="likert-flex-q">I think that I would need the support of a technical person to be able to use this system.
+            </p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement4-scale" id="statement4-scale-stronglydisagree" value="1">
+                    <label for="statement4-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement4-scale" id="statement4-scale-disagree" value="2">
+                    <label for="statement4-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement4-scale" id="statement4-scale-neutral" value="3">
+                    <label for="statement4-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement4-scale" id="statement4-scale-agree" value="4">
+                    <label for="statement4-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement4-scale" id="statement4-scale-stronglyagree" value="5">
+                    <label for="statement4-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">5.</p>
+            <p class="likert-flex-q">I found the various functions in this system were well integrated.
+            </p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement5-scale" id="statement5-scale-stronglydisagree" value="1">
+                    <label for="statement5-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement5-scale" id="statement5-scale-disagree" value="2">
+                    <label for="statement5-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement5-scale" id="statement5-scale-neutral" value="3">
+                    <label for="statement5-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement5-scale" id="statement5-scale-agree" value="4">
+                    <label for="statement5-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement5-scale" id="statement5-scale-stronglyagree" value="5">
+                    <label for="statement5-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">6.</p>
+            <p class="likert-flex-q">I thought there was too much inconsistency in this system.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement6-scale" id="statement6-scale-stronglydisagree" value="1">
+                    <label for="statement6-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement6-scale" id="statement6-scale-disagree" value="2">
+                    <label for="statement6-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement6-scale" id="statement6-scale-neutral" value="3">
+                    <label for="statement6-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement6-scale" id="statement6-scale-agree" value="4">
+                    <label for="statement6-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement6-scale" id="statement6-scale-stronglyagree" value="5">
+                    <label for="statement6-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">7.</p>
+            <p class="likert-flex-q">I would imagine that most people would learn to use this system very quickly.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement7-scale" id="statement7-scale-stronglydisagree" value="1">
+                    <label for="statement7-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement7-scale" id="statement7-scale-disagree" value="2">
+                    <label for="statement7-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement7-scale" id="statement7-scale-neutral" value="3">
+                    <label for="statement7-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement7-scale" id="statement7-scale-agree" value="4">
+                    <label for="statement7-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement7-scale" id="statement7-scale-stronglyagree" value="5">
+                    <label for="statement7-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">8.</p>
+            <p class="likert-flex-q">I found the system very cumbersome to use.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement8-scale" id="statement8-scale-stronglydisagree" value="1">
+                    <label for="statement8-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement8-scale" id="statement8-scale-disagree" value="2">
+                    <label for="statement8-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement8-scale" id="statement8-scale-neutral" value="3">
+                    <label for="statement8-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement8-scale" id="statement8-scale-agree" value="4">
+                    <label for="statement8-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement8-scale" id="statement8-scale-stronglyagree" value="5">
+                    <label for="statement8-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">9.</p>
+            <p class="likert-flex-q">I felt very confident using the system.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement9-scale" id="statement9-scale-stronglydisagree" value="1">
+                    <label for="statement9-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement9-scale" id="statement9-scale-disagree" value="2">
+                    <label for="statement9-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement9-scale" id="statement9-scale-neutral" value="3">
+                    <label for="statement9-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement9-scale" id="statement9-scale-agree" value="4">
+                    <label for="statement9-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement9-scale" id="statement9-scale-stronglyagree" value="5">
+                    <label for="statement9-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="likert-flexbox-container">
+            <p class="likert-flex-qNr">10.</p>
+            <p class="likert-flex-q">I needed to learn a lot of things before I could get going with this system.</p>
+            <div class="likert-flex-buttons" >
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement10-scale" id="statement10-scale-stronglydisagree" value="1">
+                    <label for="statement10-scale-stronglydisagree">Strongly Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement10-scale" id="statement10-scale-disagree" value="2">
+                    <label for="statement10-scale-disagree">Disagree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement10-scale" id="statement10-scale-neutral" value="3">
+                    <label for="statement10-scale-neutral">Neutral</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement10-scale" id="statement10-scale-agree" value="4">
+                    <label for="statement3-scale-agree">Agree</label>
+                </div>
+                <div class="likert-flex-item">
+                    <input type="radio" name="statement10-scale" id="statement10-scale-stronglyagree" value="5">
+                    <label for="statement10-scale-stronglyagree">Strongly Agree</label>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <h2>References</h2>
+        <ol>
+            <li>John Brooke. SUS: A ’Quick and Dirty’ Usability Scale. In Patrick W. Jordan, B. Thomas,
+                Ian Lyall McClelland, and Bernard Weerdmeester, editors, Usability Evaluation In Industry,
+                pages 189–194. CRC Press, 11 June 1996. doi: 10.1201/9781498710411. URL <a
+                    href="https://doi.org/10.1201/9781498710411"
+                    target="_blank">https://doi.org/10.1201/9781498710411</a>
+            </li>
+            <li>Aaron Bangor, Philip Kortum, and James Miller. Determining What Individual SUS Scores
+                Mean: Adding an Adjective Rating Scale. Journal of Usability Studies, 4(3):114–123, May 2009.
+                URL
+                <a href="https://uxpajournal.org/determining-what-individual-sus-scores-mean-adding-an-adjective-rating-scale/"
+                    target="_blank">https://uxpajournal.org/determining-what-individual-sus-scores-mean-adding-an-adjective-rating-scale/</a>
+            </li>
+        </ol>
+    </article>
+</body>
+
+</html>
