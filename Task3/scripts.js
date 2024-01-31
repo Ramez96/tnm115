@@ -35,6 +35,7 @@ const susQuestionnaireJsonArray = [
 
 //CHANGED
 //Changed the randomizer to shuffle the statments instead of the entire objects.
+//Since odd and even statments are calculated differently we needed to just shuffle them around respectively
 
 // function to randomize the array containing the SUS questionnaire items as JSON objects
 // returns: array of JSON objects
