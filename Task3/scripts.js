@@ -40,20 +40,31 @@ const susQuestionnaireJsonArray = [
 // returns: array of JSON objects
 function getRandomizedSusQuestionnaireJsonArray(){
 
-    // implementation of the Fisher Yates method to shuffle an array
-    // Source: https://www.w3schools.com/js/js_array_sort.asp
-    const shuffledArray = susQuestionnaireJsonArray.slice();
-    
-    for(let i = susQuestionnaireJsonArray.length - 1; i > 0; i--){
+    // separate odd and even statements
+    const oddStatements = susQuestionnaireJsonArray.filter(item => item.id % 2 !== 0);
+    const evenStatements = susQuestionnaireJsonArray.filter(item => item.id % 2 === 0);
+
+    // shuffle only the statement key for odd statements
+    for(let i = oddStatements.length - 1; i > 0; i--){
         let j = Math.floor(Math.random() * (i + 1));
-        const temp = shuffledArray[i].statement;
-        shuffledArray[i].statement = shuffledArray[j].statement;
-        shuffledArray[j].statement = temp;
+        [oddStatements[i].statement, oddStatements[j].statement] = [oddStatements[j].statement, oddStatements[i].statement];
+    }
+
+    // shuffle only the statement key for even statements
+    for(let i = evenStatements.length - 1; i > 0; i--){
+        let j = Math.floor(Math.random() * (i + 1));
+        [evenStatements[i].statement, evenStatements[j].statement] = [evenStatements[j].statement, evenStatements[i].statement];
+    }
+
+    // merge shuffled odd and even statements back into a single array
+    const shuffledArray = [];
+    for (let i = 0; i < oddStatements.length; i++) {
+        shuffledArray.push(oddStatements[i]);
+        shuffledArray.push(evenStatements[i]);
     }
 
     return shuffledArray;
 }
-
 // function to calculate the System Usability Scale (SUS) score based on an input array of JSON objects;
 // each JSON object has two keys (id, value), representing the answers of the individual SUS items
 // returns: either a number value, representing the calculated SUS score,
