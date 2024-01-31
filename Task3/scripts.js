@@ -4,8 +4,8 @@
  *  Course Code: TNM115-2024VT
  *  Institution: Linköping University
  *
- *  Author: Nico Reski
- *  Version: 2024-01-22
+ *  Author: Nico Reski & Ramez Rizek 
+ *  Version: 2024-02-01
  */
 
 // array of JSON objects, representing individual Likert scale options;
