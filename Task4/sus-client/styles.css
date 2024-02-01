@@ -1,0 +1,89 @@
+/*
+    Filename: styles.css
+    Description: Example solution for Lesson 4: JavaScript + Node.js.
+    Course Code: TNM115-2024VT
+    Institution: Linköping University
+    
+    Author: Nico Reski
+    Version: 2024-01-28
+*/
+
+/* Global Elements */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+
+a {
+    color: dodgerblue;
+}
+
+a:visited {
+    color: steelblue;
+}
+
+hr {
+    border-style: dotted;
+}
+
+/* 5-Point Likert scale */
+.likert-flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.likert-flex-item {
+    flex: 1;
+    text-align: center;
+}
+
+.likert-flex-item label {
+    display: block;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.likert-flex-item:hover {
+    background-color: #fff5eb;
+    border-radius: 8px;
+}
+
+/* SUS Item (Number + Item Statement + 5-Point Likert scale) */
+.sus-item-flexbox-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin-bottom: 12px;
+}
+
+.sus-item-flexbox-container:last-of-type {
+    margin-bottom: 0px;
+}
+
+.sus-item-number-flex-item {
+    flex: 0.4;
+    text-align: center;
+}
+
+.sus-item-statement-flex-item {
+    flex: 3.6;
+}
+
+.sus-item-scale-flex-item {
+    flex: 6;
+}
+
+/* References */
+.references {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.references li {
+    margin-bottom: 10px;
+}

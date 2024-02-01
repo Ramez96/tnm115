@@ -1,0 +1,73 @@
+<!--
+    Filename: sus.html
+    Description: Example solution for Lesson 4: JavaScript + Node.js.
+    Course Code: TNM115-2024VT
+    Institution: Linköping University
+    
+    Author: Nico Reski
+    Version: 2024-01-28
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nico Reski">
+        <meta name="description" content="A web interface for the System Usability Scale, a methodological instrument that allows for the generalized assessment of a prototype's usability.">
+        <meta name="keywords" content="System Usability Scale, SUS, usability, web programming, empirical evaluation, Media Technology, MIT, LiU">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+
+        <title>System Usability Scale</title>
+    </head>
+    
+    <body>
+        <h1>Questionnaire: System Usability Scale (SUS)</h1>
+
+        <!-- Teaser image for the SUS. -->
+        <img src="media/sus-teaser.png" alt="An illustration of the system usability scale including annotations for its result interpretation.">
+
+        <!-- Instructions for completing the questionnaire. -->
+        <article>
+            <h2>Instructions</h2>
+            <p>
+                For each of the following statements, mark <u>one</u> box that best describes
+                your reactions to the system you interacted with today.
+            </p>
+
+            <p>
+                <!-- To start over, click <a href="">here</a>. -->
+                <button onclick="generateQuestionnaire()">Generate a new questionnaire.</button>
+            </p>
+        </article>
+
+        <!-- Implementation of the actual questionnaire for completing by a user. -->
+        <article id="sus-questionnaire-container">
+            <h2>System Usability Scale</h2>
+        </article>
+
+        <!-- Implementation of displaying the SUS score (result). -->
+        <article id="sus-result-container">
+            <h2>Result</h2>
+            <button type="submit" onclick="submitQuestionnaireToServer()">Submit.</button>
+            <h3 id="sus-result"></h3>
+        </article>
+
+        <!-- Literature references for further reading about the questionnaire. -->
+        <article>
+            <h2>References</h2>
+            <ol class="references">
+                <li>
+                    John Brooke. SUS: A 'Quick and Dirty' Usability Scale. In Patrick W. Jordan, B. Thomas,
+                    Ian Lyall McClelland, and Bernard Weerdmeester, editors, <i>Usability Evaluation In Industry</i>,
+                    pages 189–194. CRC Press, 11 June 1996. doi:<a href="https://doi.org/10.1201/9781498710411" target="_blank">10.1201/9781498710411</a>.
+                </li>
+                <li>
+                    Aaron Bangor, Philip Kortum, and James Miller. Determining What Individual SUS Scores Mean:
+                    Adding an Adjective Rating Scale. <i>Journal of Usability Studies</i>, 4(3):114–123, May 2009.
+                    URL <a href="http://uxpajournal.org/determining-what-individual-sus-scores-mean-adding-an-adjective-rating-scale/" target="_blank">http://uxpajournal.org/determining-what-individual-sus-scores-mean-adding-an-adjective-rating-scale/</a>
+                </li>
+            </ol>
+        </article>
+    </body>
+</html>
