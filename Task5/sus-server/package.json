@@ -1,0 +1,10 @@
+{
+    "name": "tnm115-sus",
+    "version": "1.0.0",
+    "description": "Towards a Web Interface of the System Usability Scale.",
+    "author": "Ramez",
+    "keywords": ["tnm115", "HTML5", "CSS3", "JavaScript", "Node.js", "MongoDB", "System Usability Scale", "SUS"],
+    "dependencies": {
+        "mongodb": "6.0.0"
+    }
+}
